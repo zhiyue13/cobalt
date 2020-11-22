@@ -14,6 +14,12 @@ uploaded = files.upload()
 #(specifically on ICU patients who met inclusion/exclusion criteria and are dead)
 # Formula = (value - mean)/(stdev)
 
+import math
+import numpy as np
+import pandas as pd
+
+data = pd.read_csv("chartevents - dead.csv")
+
 item_ids = data['itemid'].unique()   #find unique itemids
 len(item_ids)                        #find length of itemids
 size = (len(item_ids),3)             #define dimension of new matrix
