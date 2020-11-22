@@ -44,4 +44,4 @@ for y in range(len(data)):
     elif (mean_sigma_matrix[result[0][0]][1] != 100001) & (mean_sigma_matrix[result[0][0]][2] != 100001):
       data['valuenum'].loc[y] = (data['valuenum'].loc[y] -  mean_sigma_matrix[result[0][0]][1])/(mean_sigma_matrix[result[0][0]][2]);
 
-data.to_csv(r"chartevents_dead_minmax_normalized.csv", index = False)
+data.to_csv(r"chartevents_dead_zscore_normalized.csv", index = False)
