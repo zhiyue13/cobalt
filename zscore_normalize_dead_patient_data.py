@@ -36,9 +36,6 @@ for y in range(len(data)):
       mean_sigma_matrix[result[0][0]][1] = 100001;
     elif np.isnan(mean_sigma_matrix[result[0][0]][2]):
       mean_sigma_matrix[result[0][0]][2] = 100001;
-    elif mean_sigma_matrix[result[0][0]][1] == mean_sigma_matrix[result[0][0]][2]:
-      mean_sigma_matrix[result[0][0]][1] = 100001;
-      mean_sigma_matrix[result[0][0]][2] = 100001;
     elif (mean_sigma_matrix[result[0][0]][2] == 0): 
       mean_sigma_matrix[result[0][0]][2] = 100001;   
     elif (mean_sigma_matrix[result[0][0]][1] != 100001) & (mean_sigma_matrix[result[0][0]][2] != 100001):
